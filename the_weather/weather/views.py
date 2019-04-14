@@ -31,7 +31,7 @@ def index(request):
             weather_data.append(city_weather)
     except KeyError:
         pass
-    except EXCEPTION as e:
+    except Exception as e:
         pass
 
     context ={'weather_data': weather_data, 'form': form}
